@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+# Consulte seu CEP
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+E se você com pouco cliques vocês obtivesse o seu endereço na ponta dos seus dedos? Neste projeto eu crei um facilitador de pegar endereço. 
+Tudo que você precisa é inserir seu CEP e já retornamos os campos de seu endereço, podendo copiar tanto individualmente quanto todos de uma vez.
+Com isso você deve estar ganhando um tempo consideravel agora preenchendo campos repetitivos.
 
-## Available Scripts
+🚧  React Select 🚀 Em construção...  🚧
 
-In the project directory, you can run:
+Tabela de conteúdos
+=================
+<p align="center">
+ <a href="#começando">Começando</a> •
+ <a href="#prerequisitos">Pré-requisitos</a> • 
+ <a href="#instalação">Instalação</a> • 
+ <a href="#tecnologias">Tecnologias</a> • 
+ <a href="#licenc-a">Licença</a> • 
+ <a href="#autor">Autor</a>
+</p>
 
-### `yarn start`
+<h4 align="center"> 
+	
+</h4>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🚀 Começando
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
 
-### `yarn test`
+Consulte **Instalação** para saber como implantar o projeto.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 📋 Pré-requisitos
 
-### `yarn build`
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
+Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 🔧 Instalação
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+# Clone este repositório
+$ git clone <https://github.com/bruno3du/consultar-cep.git>
 
-### `yarn eject`
+# Acesse a pasta do projeto no terminal/cmd
+$ cd consultar-cep
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Instale as dependências
+$ yarn install
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Execute a aplicação em modo de desenvolvimento
+$ yarn start
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# O servidor inciará na porta:3000 - acesse <http://localhost:3000>
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### 🛠 Tecnologias
 
-## Learn More
+As seguintes ferramentas foram usadas na construção do projeto:
+<div align="left">
+<img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" >
+<img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" >
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+</div>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📌 Versão
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Foi usado o [Github](https://github.com/) para controle de versão. Para as versões disponíveis, observe as [tags neste repositório](https://github.com/suas/tags/do/projeto). 
 
-### Code Splitting
+## Linceça
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🎁 Expressões de gratidão
 
-### Analyzing the Bundle Size
+* Conte a outras pessoas sobre este projeto 📢
+* Agradeço imensamente o apoio de cada um nesta trajetória 🤓.
+* etc.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+---
+### Autor
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+<a href="https://github.com/bruno3du">
+ <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/83365446?v=4" width="100px;" alt=""/>
+ <br />
+ <sub><b>Bruno Eduardo</b></sub></a> <a href="https://github.com/bruno3du" title="My Photo Profile">🚀</a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+Feito com ❤️ por Bruno Eduardo 👋🏽 Entre em contato!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=linkedin&logoColor=white&link=https://www.linkedin.com/in/bruno-eduardo-alves/)](https://www.linkedin.com/in/bruno-eduardo-alves/)
+[![Hotmail Badge](https://img.shields.io/badge/-bruno.3duardo@hotmail.com-0078D4?style=flat-square&logo=microsoft-outlook&logoColor=white&link=mailto:bruno.3duardo@hotmail.com)](mailto:bruno.3duardo@hotmail.com)
