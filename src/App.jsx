@@ -5,25 +5,37 @@ import { useState } from 'react';
 import SeuEndereco from './components/SeuEndereco';
 
 function App() {
-	const [andress, setAndress] = useState({});
+	const [values, setValues] = useState('');
+	const [andress, setAndress] = useState();
+	const [openCard, setOpenCard] = useState(false);
 
-	function handleChange(ev) {
-		const { value } = ev.target;
+	function handleClick(ev) {
+		ev.preventDefault();
 
-		const cep = value?.replace(/[^0-9]/g, '');
+		const cep = values?.replace(/[^0-9]/g, '');
 		if (cep.length !== 8) {
-			return;
+			return alert('Você não preencheu o campo corretamente, verifique e tente novamente')
 		}
-		setAndress({});
 
 		fetch(`https://viacep.com.br/ws/${cep}/json/`)
 			.then((res) => res.json())
 			.then((data) => {
-				setAndress(...value, { logradouro: data.logradouro });
-				setAndress(...value, { bairro: data.bairro });
-				setAndress(...value, { localidade: data.localidade });
-				setAndress(...value, { uf: data.uf });
+				if (data.erro) {
+					return alert(
+						'Você inseriu um CEP inexistente, por favor verifique e tente novamente'
+					);
+				}
+				setAndress({
+					cep: data.cep,
+					logradouro: data.logradouro,
+					bairro: data.bairro,
+					localidade: data.localidade,
+					uf: data.uf,
+				});
+				setOpenCard(true);
 			});
+		
+		
 	}
 
 	return (
@@ -36,18 +48,22 @@ function App() {
 						CEP
 					</label>
 					<input
+						maxLength='9'
+						value={values}
 						className='input cep-input p-2 mt-2'
 						id='cep'
 						name='cep'
-						type='number'
+						type='text'
+						onChange={(ev) => setValues(ev.target.value)}
 						placeholder='Digite aqui seu CEP'
-						onChange={handleChange}
 					/>
-					<button className='button mt-3'>Pesquisar</button>
+					<button onClick={handleClick} className='button mt-3'>
+						Pesquisar
+					</button>
 				</form>
 			</div>
 
-			<SeuEndereco />
+			{openCard && <SeuEndereco andress={andress} />}
 		</div>
 	);
 }
