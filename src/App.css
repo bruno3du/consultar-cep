@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
+/** @format */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+:root {
+	--font-Roboto: 'Roboto', sans-serif;
+	--font-Ubuntu: 'Ubuntu', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title {
+	color: #94a5ff;
+	font-size: 36px;
+	font-family: var(--font-Roboto);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cep {
+	font-weight: bold;
+	font-size: 18px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.input {
+	width: 100%;
+	height: 41px;
+	border: none;
 }
 
-.App-link {
-  color: #61dafb;
+.cep-input {
+	width: 90vw;
+	background-color: #e1e1e1;
+	border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button {
+	font-size: 18px;
+	font-weight: bold;
+	color: #e5fce7;
+	width: 100%;
+	height: 43px;
+	border: none;
+	box-shadow: none;
+	background-color: #53a15b;
+	border-radius: 5px;
+}
+
+.andress-Filds {
+	background-color: #063970;
+	width: 90vw;
+	max-width: 800px;
+	border-radius: 5px;
+}
+
+.input-andress{
+    background-color: #0B64C5;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+
+.btn {
+	background-color: #0B64C5;
+	border-radius: 5px;
+	border-bottom: 1px solid white;
+	border-right: 1px solid white;
+	border-top: 1px solid white;
 }
