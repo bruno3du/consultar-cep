@@ -6,8 +6,8 @@ Com isso você deve estar ganhando um tempo consideravel agora preenchendo campo
 
 🚧  React Select 🚀 Em construção...  🚧
 
-Tabela de conteúdos
-=================
+## Tabela de conteúdos
+
 <p align="center">
  <a href="#começando">Começando</a> •
  <a href="#prerequisitos">Pré-requisitos</a> • 
