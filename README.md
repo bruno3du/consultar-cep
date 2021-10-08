@@ -10,6 +10,8 @@ Basta o usuário colocar o cep que automaticamente o CEP é apresentado. E mais 
 
 Inseri também, uma funcionalidade de copiar no clique que é mais um dos eventos que agrego ao meu escopo de conhecimento.
 
+<img src="gitConsultarCEP.gif">
+
 
 Veja você mesmo: https://consultarseucep.netlify.app/
 
