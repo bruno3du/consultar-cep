@@ -1,10 +1,16 @@
 # Consulte seu CEP
 
-E se você com pouco cliques vocês obtivesse o seu endereço na ponta dos seus dedos? Neste projeto eu crei um facilitador de pegar endereço. 
-Tudo que você precisa é inserir seu CEP e já retornamos os campos de seu endereço, podendo copiar tanto individualmente quanto todos de uma vez.
-Com isso você deve estar ganhando um tempo consideravel agora preenchendo campos repetitivos.
+Consultar CEP
 
-🚧  React Select 🚀 Em construção...  🚧
+
+
+Neste projeto o objetivo utilizar e entender na pratica o uso de bootstrap, e utilizar o viacep uma api para consulta de cep e criar uma aplicação que possibilita ter o endereço na ponta do dedo por assim dizer.
+
+Basta o usuário colocar o cep que automaticamente o CEP é apresentado. E mais ele pode copiar só o dado que preferir ou até mesmo o endereço completo.
+
+Inseri também, uma funcionalidade de copiar no clique que é mais um dos eventos que agrego ao meu escopo de conhecimento.
+
+
 
 ## Tabela de conteúdos
 
